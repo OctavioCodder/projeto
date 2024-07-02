@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+CO:wght@100..400&display=swap');
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70rem;
+    background-color: #222831;
+}
+
+h1{
+    
+    position: absolute;
+    color: #464664;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-top: 80px;
+    text-transform: uppercase;
+}
+
+.corpo{
+    position: relative;
+}
+
+.valente{
+    position: relative;
+    padding-left: 600px;
+    cursor: pointer;
+    animation: up 6s linear infinite;
+}
+
+/* Parte fotos */
+
+.imagens{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    margin-top: -10rem;
+}
+
+.imagens img{
+    width: 85%;
+    height: 60%;
+    border-radius: 100px;
+    padding-left: 40px;
+    padding-right: 30px;
+}
+
+/* Parte do envelope */
+
+.envelope{
+    position: absolute;
+    width: 250px;
+    height: 270px;
+    padding-left: 0px;
+    border-radius: 4px 4px;
+    background-color: #0f2b1a;
+}
+
+.envelope::before{
+    background-color: #0f2b1a;
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    transform: rotate(45deg);
+    top: -90px;
+    left: 35px;
+    border-radius: 12px 6px 6px 6px;
+}
+
+.cartao{
+    position: absolute;
+    background-color: #acbeb2;
+    width: 250px;
+    height: 270px;
+    top: -15px;
+    left: 38rem;
+    border-radius: 12px 6px 6px 6px;
+    box-shadow: -5px -5px 100px #0f2b1a;
+}
+
+.cartao::before{
+    content: "";
+    position: absolute;
+    border: 3px solid #6e0b0b;
+    border-style: dotted;
+    width: 236px;
+    height: 240px;
+    left: 5px;
+    top: 12px;
+}
+
+.texto{
+    position: absolute;
+    font-family: 'Brush Script MT', cursive;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    top: 20px;
+    left: 1rem;
+    color: #000000;
+}
+
+i{
+    color: #a9a311;
+    font-size: 30px;
+    display: inline-block;
+    height: 30px;
+    margin: 0 10px;
+    position: relative;
+    top: 220px;
+    left: 11rem;
+    width: 30px;
+}
+
+.frente{
+    position: absolute;
+    border-right: 200px solid #a9ffcc;
+    border-top: 95px solid transparent;
+    border-bottom: 142px solid transparent;
+    left: 660px;
+    top: 30px;
+    width: 0;
+    height: 0;
+    z-index: 10;
+}
+
+.frente::before{
+    position: absolute;
+    content: "";
+    border-left: 265px solid #a9ffcc;
+    border-top: 230px solid transparent;
+    left: -60px;
+    top: -84px;
+    width: 0;
+    height: 0;
+    border-radius: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes up {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+  }
+  
+  /* to scale the shadow */
+  @keyframes scale {
+    0%,
+    100% {
+      transform: scaleX(1);
+    }
+    50% {
+      transform: scaleX(0.85);
+    }
+  }
